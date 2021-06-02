@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,5 +18,9 @@ namespace ContractTracingApp
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
