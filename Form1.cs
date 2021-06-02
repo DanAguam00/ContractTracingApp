@@ -22,5 +22,20 @@ namespace ContractTracingApp
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lbl_ContactNumber_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
