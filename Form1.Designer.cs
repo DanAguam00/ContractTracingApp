@@ -95,6 +95,8 @@ namespace ContractTracingApp
             // 
             // TxtBx_FirstName
             // 
+            this.TxtBx_FirstName.BackColor = System.Drawing.SystemColors.Window;
+            this.TxtBx_FirstName.ForeColor = System.Drawing.SystemColors.WindowText;
             this.TxtBx_FirstName.Location = new System.Drawing.Point(86, 40);
             this.TxtBx_FirstName.Name = "TxtBx_FirstName";
             this.TxtBx_FirstName.Size = new System.Drawing.Size(288, 23);
