@@ -92,7 +92,6 @@ namespace ContractTracingApp
             this.Lbl_ContactNumber.Size = new System.Drawing.Size(96, 15);
             this.Lbl_ContactNumber.TabIndex = 4;
             this.Lbl_ContactNumber.Text = "Contact Number";
-            this.Lbl_ContactNumber.Click += new System.EventHandler(this.Lbl_ContactNumber_Click);
             // 
             // TxtBx_FirstName
             // 
@@ -144,7 +143,6 @@ namespace ContractTracingApp
             this.TxtBx_Sex.Name = "TxtBx_Sex";
             this.TxtBx_Sex.Size = new System.Drawing.Size(32, 23);
             this.TxtBx_Sex.TabIndex = 12;
-            this.TxtBx_Sex.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // Lbl_Sex
             // 
@@ -154,7 +152,6 @@ namespace ContractTracingApp
             this.Lbl_Sex.Size = new System.Drawing.Size(25, 15);
             this.Lbl_Sex.TabIndex = 11;
             this.Lbl_Sex.Text = "Sex";
-            this.Lbl_Sex.Click += new System.EventHandler(this.label2_Click);
             // 
             // TxtBx_ContactNumber
             // 
@@ -181,7 +178,7 @@ namespace ContractTracingApp
             // 
             // Btn_Sbmt
             // 
-            this.Btn_Sbmt.Location = new System.Drawing.Point(162, 255);
+            this.Btn_Sbmt.Location = new System.Drawing.Point(162, 242);
             this.Btn_Sbmt.Name = "Btn_Sbmt";
             this.Btn_Sbmt.Size = new System.Drawing.Size(75, 23);
             this.Btn_Sbmt.TabIndex = 16;
@@ -193,7 +190,7 @@ namespace ContractTracingApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(395, 450);
+            this.ClientSize = new System.Drawing.Size(395, 290);
             this.Controls.Add(this.Btn_Sbmt);
             this.Controls.Add(this.TxtBx_PWD);
             this.Controls.Add(this.Lbl_PWD);
@@ -211,8 +208,12 @@ namespace ContractTracingApp
             this.Controls.Add(this.Lbl_MiddleInitial);
             this.Controls.Add(this.Lbl_LastName);
             this.Controls.Add(this.Lbl_FirstName);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(411, 329);
+            this.MinimumSize = new System.Drawing.Size(411, 329);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Contact Tracing App";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
