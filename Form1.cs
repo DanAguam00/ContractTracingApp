@@ -134,7 +134,7 @@ namespace ContractTracingApp
             if (TxtBx_FirstName.Text == "")
             {
                 TxtBx_FirstName.BackColor = Color.LightPink;
-                complete = false;
+                complete = false; 
             }
             else
             {
@@ -213,8 +213,6 @@ namespace ContractTracingApp
                 if (TxtBx_MiddleInitial.Text == "")
                 {
                     TxtBx_MiddleInitial.BackColor = Color.LightPink;
-                    Btn_Sbmt.Enabled = false;
-
                     var messageBoxResult = MessageBox.Show("You did not input your middle initial. Are you sure?", "Missing Middle Initial", MessageBoxButtons.YesNo);
 
                     if (messageBoxResult == DialogResult.Yes)
