@@ -17,6 +17,7 @@ namespace ContractTracingApp
         String createTime = DateTime.Now.ToLongTimeString();
         int highest = 0;
         Boolean complete = true;
+        Boolean generated = false;
 
         public Form1()
         {
@@ -26,7 +27,7 @@ namespace ContractTracingApp
         private void Btn_Sbmt_Click(object sender, EventArgs e)
         {
             blankTextBox();
-            if (complete)
+            if (complete && !generated)
             {
                 Btn_Sbmt.Enabled = false;
                 fileRenaming();
@@ -223,6 +224,7 @@ namespace ContractTracingApp
 
                         mainDirectory(highest);
                         generateContractTracingForm(highest);
+                        generated = true;
                     }
                 }
                 else
