@@ -29,7 +29,6 @@ namespace ContractTracingApp
             blankTextBox();
             if (complete && !generated)
             {
-                Btn_Sbmt.Enabled = false;
                 fileRenaming();
 
                 highest++;
@@ -58,11 +57,11 @@ namespace ContractTracingApp
                     mainFile.Write("Start of Program");
                     for (int j = 0; j < 1; j++)
                     {
-                        mainFile.Write("=");
                         if (j == 1)
                         {
                             mainFile.WriteLine("=");
                         }
+                        mainFile.Write("=");
                     }
                 }
                 mainFile.Write("=");
@@ -110,7 +109,12 @@ namespace ContractTracingApp
             mainFile = File.AppendText("MainDirectory.txt");
             for (int i = 0; i < 20; i++)
             {
+                if(i == 0)
+                {
+                    mainFile.WriteLine("=");
+                }
                 mainFile.Write("=");
+
             }
             mainFile.WriteLine();
             mainFile.WriteLine("ContactNo:" + patientNum);
