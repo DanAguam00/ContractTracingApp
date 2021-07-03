@@ -127,7 +127,6 @@ namespace ContractTracingApp
             mainFile.WriteLine(createDate + "|" + createTime);
             mainFile.WriteLine();
             mainFile.Close();
-
         }
 
         private void blankTextBox()
